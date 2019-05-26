@@ -18,6 +18,8 @@ def sort_blocks():
     with open('README.md', 'r') as read_me_file:
         read_me = read_me_file.read()
 
+
+
     # Separating the 'table of contents' from the contents (blocks)
     table_of_contents = ''.join(read_me.split('- - -')[0])
     blocks = ''.join(read_me.split('- - -')[1]).split('\n# ')
@@ -78,3 +80,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
